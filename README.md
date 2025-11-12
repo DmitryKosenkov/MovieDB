@@ -37,3 +37,11 @@ This allows for insights into filmmaking trends, profitability, and audience rec
    - Director performance metrics  
    - Trends by release year and rating  
 
+## 🧩 Entity Relationship Diagram (ERD)
+
+The ERD below represents the structure and relationships between all tables in the database.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f4f8b318-5aca-4919-8b97-210bee654e71" width="661" height="211" alt="ER Diagram of Movie Database">
+</p>
+
