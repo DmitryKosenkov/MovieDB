@@ -29,3 +29,57 @@ Validates that the release year is between **1900** and the current year. Invali
 
 These triggers collectively protect the database from inconsistent or illogical data, maintaining reliability across all movie-related records.
 
+
+# 04_views_and_queries.sql
+
+This file defines two database views and includes several example SQL queries for retrieving structured movie data from the **moviedb** database.
+
+## Views
+
+### `movie_summary`
+
+Combines key movie information into a single view.
+Includes:
+
+* movie ID
+* title
+* rating
+* score
+* gross revenue
+* distributor name
+
+This view simplifies access to commonly used movie-related data.
+
+### `movie_genres`
+
+Provides a list of movies along with their associated genres.
+Joins movie records with their linked genre entries to present a clean title–genre pairing.
+
+## Sample Queries
+
+### 1. Movies with Genres, Scores, and Distributors (sorted by score)
+
+Retrieves detailed movie information, including genre, score, and distributing company, ordered from highest to lowest score.
+
+### 2. Movies with Gross Revenue Above a Given Threshold
+
+Returns titles of movies whose gross revenue exceeds **2,000,000**.
+
+### 3. Movies Released After 2010 with Scores
+
+Selects movies released after 2010 and shows their titles, directors, release year, and scores.
+
+### 4. Average Score by Genre
+
+Calculates and lists the average score for each genre, sorted from highest to lowest.
+
+### 5. Action Movies by Score
+
+Retrieves titles, genres, scores, and distributors for movies specifically in the **Action** genre, ordered by score.
+
+### 6. Movies Released After 2015
+
+Returns movies released after 2015 along with director names and scores, ordered by score.
+
+These views and queries provide ready-to-use tools for analyzing movie data, exploring genres, evaluating performance, and generating summaries across the database.
+
