@@ -41,7 +41,7 @@ This allows for insights into filmmaking trends, profitability, and audience rec
 The ERD below represents the structure and relationships between all tables in the database.
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/f4f8b318-5aca-4919-8b97-210bee654e71" width="661" height="211" alt="ER Diagram of Movie Database">
+  <img src="https://github.com/Git-Axo/MovieDB/blob/main/eer/ERR_Diargam.drawio.png" width="661" height="211" alt="ER Diagram of Movie Database">
 </p>
 
 ## 📄 Summary
