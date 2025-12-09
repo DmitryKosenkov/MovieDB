@@ -42,3 +42,27 @@ JOIN Genres gr ON g.genreid = gr.genreid
 JOIN Score s ON gr.movieid = s.movieid
 GROUP BY g.genre
 ORDER BY avg_score DESC;
+
+USE moviedb;​
+SELECT m.title, ​
+ g.genre, ​
+ s.score, ​
+ d.distname ​
+FROM Movies m ​
+JOIN Genres gr ON m.movieid = gr.movieid ​
+JOIN Genre g ON gr.genreid = g.genreid ​
+JOIN Score s ON m.movieid = s.movieid ​
+JOIN Distribution d ON m.movieid = d.movieid​
+WHERE g.genre = 'Action' ​
+ORDER BY s.score DESC;​ 
+Update to sample query:
+
+USE moviedb;​
+SELECT m.title, ​
+ CONCAT(m.dir_first_name,' ',m.dir_last_name) AS director,​
+ m.rel_year, ​
+ s.score ​
+FROM Movies m ​
+JOIN Score s ON m.movieid = s.movieid ​
+WHERE m.rel_year > 2015​
+ORDER BY s.score;​
